@@ -14,6 +14,7 @@ body {
 
 
 
+
 .nav-items {
   display: flex;
   justify-content: space-around;
@@ -35,7 +36,7 @@ body {
   align-items: center;
   width: 100%;
   height: 520px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 10%), url(backgound1-01.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,7 +59,7 @@ body {
 }
 
 .intro button {
-  background-color: #5edaf0;
+  background-color: #2BBFB0;
   color: #000;
   padding: 10px 25px;
   border: none;
@@ -66,7 +67,13 @@ body {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+  transition: .5s ease;
   box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+}
+
+.intro button:hover{
+  background-color: #039486;
+  transform: scale(1.1);
 }
 
 .achievements {
