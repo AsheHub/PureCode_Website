@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://kit.fontawesome.com/880306a6d3.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel= "stylesheet" href= "OrderStyle.CSS">
+  <title>Simple HTML OrderPage</title>
+
+</head>
+
+<body>
+
+  <header class="header">
+    <img  src="PureCodeLogo2.jpeg" width="250" height="77" alt="PureCodeLogo">
+    <nav class="nav-items">
+      <a href="home.html">Home</a>
+    </nav>
+    </header>
+  
+<main>
+
+  <div class="form">
+ 
+    <form method="post" name="form" action="/server2" autocomplete="on">
+      <h2>Personal Information</h2>
+
+     <div class="card1">
+        <p>
+          <label>Name:
+            <input type="text" name="name" id="Name" placeholder="Enter name " required />
+          </label>
+        </p>
+
+        <p>
+          <label>Email:
+            <input type="email" id="email" name="email" placeholder="name@domain.com" required />
+          </label>
+        </p>
+
+        <p>
+          <label>Mobile Number:
+            <input type="text" name="Mobile" id="Mobile" placeholder="Enter Number " required />
+          </label>
+        </p>
+      </div>
+    <!--Another form-->
+    <h2>Order Request</h2>
+
+      <div class="card1">
+        <p>
+          <label for="service">Choose a service:</label>
+
+            <select name="service" id="service">
+            <option value="Web Development">Web Development</option>
+            <option value="Game Development">Game Development</option>
+            <option value="Mobile Application">Mobile Application</option>
+            <option value="Content Management">Content Management</option>
+            <option value="Digital Marketing">Digital Marketing</option>
+            <option value="Business Solutions">Business Solutions</option>
+
+            </select>
+        </p>
+
+        <p>
+          <label>Order Description:<br>
+            <textarea id="description" name="description" placeholder="Type your detail here" rows="5" cols="30" required></textarea>
+          </label>
+        </p>
+    
+
+        <p>
+          <label> Is it Urgent?:<br>
+            <label> <input id="choice"  name="choice" type="radio" value="Yes" checked> Yes<br></label>
+            <label> <input id="choice"  name="choice" type="radio" value="No"> No </label>
+          </label>
+        </p>
+      </div>
+
+      <label>
+        <p>
+          <input class="Button" id="submitButton" type="submit" name="submit" value="Send Order" />
+        </p>
+      </label>
+
+    </form>
+    </div>
+
+</main>
+</body>
+<!---------Footer-------->
+<footer class="footer">
+  <div class="copy">© 2023 Developer
+    <p><br>Ashjan Alharthi <br>Najwa Aldahri <br>Asma Saleh</p>
+  </div>
+
+  <div class="bottom-links">
+    <div class="links">
+      <span>More Info</span>
+      <a href="home.html">Home</a>
+      <a href="#AboutPureCode.html">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="links">
+      <span>Social Links</span>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+</html>
