@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel= "stylesheet" href= "homeStyle.CSS">
   <title>Simple HTML HomePage</title>
+  <link rel="icon" type="image/x-icon" href="images/Logo-png.png">
   <!-- for the Services icon-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   
@@ -15,47 +16,46 @@
 </head>
 
 <body>
-  <header class="header">
-  <img  src="PureCodeLogo2.jpeg" width="250" height="77" alt="PureCodeLogo">
+  <section  class="header">
+    <img  src="images/PureCodeLogo2.jpeg" width="200" height="65" alt="PureCodeLogo">
   <nav class="nav-items">
-    <a href="home.html">Home</a>
-    <a href="#Service">Service</a>
-    <a href="#AboutPureCode">About</a>
-    <a href="#">Our work</a>
-    <a href="#">Contact</a>
+    <a href="#Home">Home</a>
+    <a href="#Services">Service</a>
+    <a href="#About Us">About</a>
+    <a href="#Our Work">Our work</a>
+    <a href="#Contact">Contact</a>
   </nav>
-  </header>
+
+  </section>
 
 <main>
-  <div class="intro">
+  <section class="intro" id="Home">
     <h1>PureCode </h1>
     <p>Best Software Development and Services</p>
-    <button>Learn More</button>
+    <button ><a href="#About Us">Learn More</a></button>
   
-  <div class="achievements">
-    <div class="work">
-      <p class="work-heading">15</p>
-      <p class="work-text">Specialist</p>
+    <div class="achievements">
+      <div class="work">
+        <p class="work-heading">15</p>
+        <p class="work-text">Specialist</p>
+      </div>
+
+      <div class="work">
+        <p class="work-heading">10+</p>
+        <p class="work-text">Years</p>
+      </div>
+
+      <div class="work">
+        <p class="work-heading">70+</p>
+        <p class="work-text">Projects</p>
+      </div>
     </div>
 
-    <div class="work">
-      <p class="work-heading">10+</p>
-      <p class="work-text">Years</p>
-    </div>
-
-    <div class="work">
-      <p class="work-heading">70+</p>
-      <p class="work-text">Projects</p>
-    </div>
-  </div>
-
-</div>
+  </section>
 
 <!--------Our Services--------->
-
-<div class="container">
-
-  <h1 class="heading" id="Service">our services</h1>
+<section class="container">
+  <h1 class="heading" id="Services">our services</h1>
 
   <div class="box-container">
 
@@ -97,15 +97,21 @@
 
   </div>
 
+</section>
+<!--
+<div class="container">
+
 </div>
 
+-->
+
 <!--------About-Us------------->
-<div class="about-us" id="AboutPureCode">
+<div class="about-us" id="About Us">
   <div class="about-us-text">
     <h2>About <span>PureCode</span></h2>
     <p>Is a Saudi company established in 2005, Specialized in providing software solutions for business and services, producing advanced software as customers’ request and aspiration.</p>
   </div>
-  <img src="AboutUs.jpg" alt="AboutUs">
+  <img src="images/AboutUs.jpg" alt="AboutUs">
 </div>
 
 <!--Adavantage-->
@@ -156,6 +162,107 @@
 
 
 
+<!---------Contact Us---------->
+<section class="container-contact" id="Contact">
+  <h2 class="Ftitle">Our Contact</h2>
+
+  <div class="form">
+    <div class="contact-info">
+      <h3 class="titleInfo">Let's get in touch</h3>
+      <p class="textInfo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus qui aliquid exercitationem voluptatem fugiat.</p>
+
+      <div class="info">
+        <div class="information">
+          <img src="images/location.png" class="icon" alt="">
+          <p>Jeddah, Saudi Arabia</p>
+        </div>
+
+        <div class="information">
+          <img src="images/Email.png" class="icon" alt="">
+          <p>info@purecode.sa</p>
+        </div>
+
+        <div class="information">
+          <img src="images/call.png" class="icon" alt="">
+          <p>+966-56-690-0074</p>
+        </div>
+
+      </div>
+
+      <div class="social-media">
+        <p> Connect with us:</p>
+        <div class="social-icon">
+          <a href="https://twitter.com/PurecodeSa?s=20" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=966566900074" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/purecode-sa/about/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://t.me/Purecodesa" target="_blank">
+            <i class="fab fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="contact-form">
+     
+    <form action="home.html" autocomplete="off">
+      <h3 class="title">Contact Us</h3>
+      <div class="input-container">
+        <input type="text" name="name" class="input">
+        <label >Name</label>
+        <span>Name</span>
+      </div>
+
+      <div class="input-container">
+        <input type="email" name="email" class="input">
+        <label for="" >Email</label>
+        <span>Email</span>
+      </div>
+
+      <div class="input-container">
+        <input type="text" name="num" class="input">
+        <label for="" >Phone Number</label>
+        <span>Phone Number</span>
+      </div>
+
+      <div class="meet-container">
+        <label for="Meeting-Type">Meeting Type</label>
+        <select name="Meeting Type">
+          <option value="virtual">Virtual</option>
+          <option value="direct">Direct</option>
+        </select>
+
+      </div>
+
+      <div class="input-container textarea">
+        <textarea  name="message" class="input" cols="30" rows="10"></textarea>
+        <label for="" >Message</label>
+        <span>Message</span>
+        <input type="submit" value="Send" class="btn">
+
+      </div>
+
+    </form>
+
+      </span>
+    </div>
+
+  </div>
+
+
+</section>
+
+
+
+
+
 
 
 
@@ -169,7 +276,7 @@
 <!---------Footer-------->
 <footer class="footer">
   <div class="copy">© 2023 Developer
-    <p><br>Ashjan Alharthi <br>Najwa Aldahri <br>Asma Saleh</p>
+    <p><br>Ashjan Alharthi <br>Najwa Aldahri <br>Asma Alwaal</p>
   </div>
 
   <div class="bottom-links">
@@ -187,5 +294,9 @@
     </div>
   </div>
 </footer>
+
+<!----Script file---->
+<script src="Script/script.js"></script>
+
 </body>
 </html>
