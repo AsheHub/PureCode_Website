@@ -7,6 +7,7 @@
   <script src="https://kit.fontawesome.com/880306a6d3.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel= "stylesheet" href= "OrderStyle.CSS">
+  <script type="text/javascript" src="Script\validation.js"></script>
   <title>Simple HTML OrderPage</title>
 
 </head>
@@ -25,28 +26,29 @@
     </header>
   
 <main>
+  <h2 class="title">Order Page</h2>
 
   <div class="form">
  
-    <form method="post" name="form" action="/server2" autocomplete="on">
+    <form method="post" id="form" action="./" autocomplete="on">
       <h2>Personal Information</h2>
 
      <div class="card1">
         <p >
           <label>Name:
-            <input type="text" name="name" id="Name" placeholder="Enter name " required  />
+            <input type="text" name="name" id="name"  class="textField" placeholder="Enter name " required />
           </label>
         </p>
 
         <p>
           <label>Email:
-            <input type="email" id="email" name="email" placeholder="name@domain.com" required />
+            <input type="email" id="email" name="email" class="textField" placeholder="name@domain.com" required />
           </label>
         </p>
 
         <p>
           <label>Mobile Number:
-            <input type="text" name="Mobile" id="Mobile" placeholder="Enter Number " required />
+            <input type="text" name="Mobile" id="mobile" class="textField" placeholder="Enter Number " required />
           </label>
         </p>
       </div>
@@ -57,7 +59,7 @@
         <p>
           <label for="service">Choose a service:</label>
 
-            <select name="service" id="service">
+            <select name="service" id="service" class="textField">
             <option value="Web Development">Web Development</option>
             <option value="Game Development">Game Development</option>
             <option value="Mobile Application">Mobile Application</option>
@@ -70,22 +72,23 @@
 
         <p>
           <label>Order Description:<br>
-            <textarea id="description" name="description" placeholder="Type your detail here" rows="5" cols="30" required></textarea>
+            <textarea id="description" name="description" class="textField" placeholder="Type your detail here" rows="5" cols="30" required></textarea>
           </label>
         </p>
     
 
         <p>
           <label> Is it Urgent?:<br>
-            <label> <input id="choice"  name="choice" type="radio" value="Yes" checked> Yes<br></label>
+            <label> <input id="choice"  name="choice" type="radio" value="Yes" checked>Yes<br></label>
             <label> <input id="choice"  name="choice" type="radio" value="No"> No </label>
           </label>
         </p>
+
       </div>
 
       <label>
         <p>
-          <input class="Button" id="submitButton" type="submit" name="submit" value="Send Order" />
+          <input class="Button" id="submitButton" type="submit" name="submit" value="Submit" />
         </p>
       </label>
 
@@ -93,7 +96,6 @@
     </div>
 
 </main>
-</body>
 <!---------Footer-------->
 <footer class="footer">
   <div class="copy">© 2023 Developer
@@ -104,7 +106,7 @@
     <div class="links">
       <span>More Info</span>
       <a href="home.html">Home</a>
-      <a href="#AboutPureCode.html">About</a>
+      <a href="#">About</a>
       <a href="#">Contact</a>
     </div>
     <div class="links">
@@ -115,4 +117,5 @@
     </div>
   </div>
 </footer>
+</body>
 </html>

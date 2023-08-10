@@ -38,6 +38,17 @@ body {
 
 /* CSS for form */
 
+.title{
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: sans-serif ;
+  text-shadow: 0 5px 10px rgba(0,0,0,.2);
+  font-size: 40px;
+  margin-top: 50px;
+
+}
+
 .form {
     background:#2BBFB0;
     width: 650px;
@@ -50,16 +61,24 @@ body {
     padding-right: 20px;
     padding-left: 20px;
     margin-bottom: 2rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
     box-decoration-break: clone;
    -webkit-box-decoration-break: clone;
       border-radius: 20px;
   }
 
+ 
+  .textField {
+    top: 10px;
+    left: 8px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: lightgray;
+  }
   .form h2{
     color: #ffffff;
-    text-transform: uppercase;
     text-align: center;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
   }
   .card1 {
     background:white;
