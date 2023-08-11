@@ -54,6 +54,7 @@ body {
   font-family: sans-serif;
   font-size: 60px;
   color: #fff;
+  letter-spacing: 4px;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 12%;
@@ -86,7 +87,7 @@ body {
 }
 
 .intro button:hover{
-  background-color: #039486;
+  background-color: #3ae9d8;
   transform: scale(1.1);
   transition: .6s ease;
   
@@ -348,7 +349,11 @@ h2{
 }
 
 .AdvantageSection div p{
-  padding-bottom: 15px;
+
+  padding: 25px 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
 
 }
 
