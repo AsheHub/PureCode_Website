@@ -202,7 +202,7 @@
           <a href="https://www.linkedin.com/company/purecode-sa/about/" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          
+
           <a href="https://t.me/Purecodesa" target="_blank">
             <i class="fab fa-telegram-plane"></i>
           </a>
@@ -217,19 +217,19 @@
     <form action="home.html" autocomplete="off">
       <h3 class="title">Contact Us</h3>
       <div class="input-container">
-        <input type="text" name="name" class="input">
+        <input type="text" name="name" class="input"  id="name">
         <label >Name</label>
         <span>Name</span>
       </div>
 
       <div class="input-container">
-        <input type="email" name="email" class="input">
+        <input type="email" name="email" class="input" id="email">
         <label for="" >Email</label>
         <span>Email</span>
       </div>
 
       <div class="input-container">
-        <input type="text" name="num" class="input">
+        <input type="text" name="num" class="input" id="mobile">
         <label for="" >Phone Number</label>
         <span>Phone Number</span>
       </div>
@@ -237,8 +237,8 @@
       <div class="meet-container">
         <label for="Meeting-Type">Meeting Type</label>
         <select name="Meeting Type">
-          <option value="virtual">Virtual</option>
-          <option value="direct">Direct</option>
+          <option value="virtual" id="choice">Virtual</option>
+          <option value="direct" id="choice">Direct</option>
         </select>
 
       </div>
@@ -247,7 +247,7 @@
         <textarea  name="message" class="input" cols="30" rows="10"></textarea>
         <label for="" >Message</label>
         <span>Message</span>
-        <input type="submit" value="Send" class="btn">
+        <input type="submit" value="Send" class="btn" id="submitButton">
 
       </div>
 
@@ -294,6 +294,7 @@
 
 <!----Script file---->
 <script src="Script/script.js"></script>
+<script type="text/javascript" src="Script\validation.js"></script>
 
 
 </body>

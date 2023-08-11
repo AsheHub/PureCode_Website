@@ -1,3 +1,5 @@
+
+//---just for animation----
 const inputs =document.querySelectorAll(".input");
 
 function focusFunc(){
